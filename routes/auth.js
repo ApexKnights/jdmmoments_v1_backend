@@ -51,7 +51,7 @@ router.post("/verify/:id", async (req, res) => {
             userId: user._id,
             token: uuidv4().toString("hex"),
         })
-        const url = `${process.env.FRONTEND_URL}/success/${user._id}/verify/${token.token}`;
+        const url = `${process.env.FRONTEND_URL}/#/success/${user._id}/verify/${token.token}`;
         await sendEmail(user.email, "Verify Your Email", url)
         res.status(201).json({
             success: true,

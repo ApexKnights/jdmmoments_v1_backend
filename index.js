@@ -2,13 +2,13 @@ import express from "express";
 import dotenv from "dotenv"
 import cookieParser from "cookie-parser";
 import mongoose from "mongoose";
-import authRouter from "../backend/routes/auth.js"
-import userRouter from "../backend/routes/user.js"
-import pvkRouter from "../backend/routes/pvk.js"
-import diamondRouter from "../backend/routes/diamond.js"
-import saleRouter from "../backend/routes/sales.js"
-import settingsRouter from "../backend/routes/settings.js"
-import reviewRouter from "../backend/routes/review.js"
+import authRouter from "./routes/auth.js"
+import userRouter from "./routes/user.js"
+import pvkRouter from "./routes/pvk.js"
+import diamondRouter from "./routes/diamond.js"
+import saleRouter from "./routes/sales.js"
+import settingsRouter from "./routes/settings.js"
+import reviewRouter from "./routes/review.js"
 import cors from "cors"
 import multer from "multer";
 import { v2 as cloudinary } from "cloudinary";
